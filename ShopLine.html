@@ -5,193 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        header{
-            width: 100%;
-            height: 120px;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            z-index: 1;
-            background-color: #EBF1F8;
-        }
-        .login{
-            width: 84%;
-            padding-top: 24px;
-            text-align: right;
-        }
-        .login a{
-            margin-left:30px;
-            color: #2d3b52;
-            text-decoration: none;
-        }
-        .HD{
-            padding-top: 17px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .HD li{
-            list-style: none;
-            display: inline-block;
-        }
-        .HD a{
-            color: #2d3b52;
-            text-decoration: none;
-        }
-        .HD li+li{
-            margin-left: 30px;
-        }
-        .HD a:hover{
-            border-bottom: 3px solid #487dd2;
-        }
-        .HD img{
-            /* width: 15.5% */
-            width: 160px;
-        }
-        button{
-            width: 140px;
-            height: 50px;
-            margin-left: 30px;
-            background-color: #0061FF;
-            color: white;
-            font-weight: 800;
-            font-size: 16px;
-            letter-spacing: 1px;
-            border-radius: 10px;
-            border: none;
-        }
-        .start{
-            height: 170px;
-            background-color: #EBF1F8
-        }
-        .wrap{
-            width: 70%;
-            display: flex;
-            
-        }
-        .item{
-            width: 50%;
-        }
-        .BGC-1{
-            width: 100%;
-            height: 510px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #EBF1F8;
-        }
-        h1{
-            padding-top: 50px;
-            color: #052855;
-            font-size: 40px;
-            font-weight: 600;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
-        .title p{
-            color: #5D6A7A;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 17px;
-        }
-        .title p:nth-child(2){
-            margin: 30px 0;
-        }
-        #green{
-            color: #52B985;
-        }
-        p+button{
-            width: 320px;
-            font-weight: 500;
-            position: relative;
-            left: -5%;
-            margin-bottom: 5px;
-        }
-        #pic1{
-            height: 500px;
-        }
-
-        .blank{
-            height: 80px;
-            background-image: linear-gradient(to bottom,#F5F8FB,#ECF2F9);
-        }
-
-        .BGC-2{
-            height: 270px;
-            background-color: #F7F8F9;
-        }
-        .BGC-2 P:first-child{
-            color: #052855;
-            text-align: center;
-            padding-top: 70px;
-            padding-bottom: 40px;
-            font-size: 33px;
-            font-weight: 700;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
-        .BGC-2 p:nth-child(2){
-            color: #5D6A7A;
-            text-align: center;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 17px;
-        }
-
-        .BGC-3{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #FFFFFF;
-            padding-top: 60px;
-        }
-        .BGC-3 .item{
-            padding-bottom: 60px;
-        }
-        .card p:nth-child(1){
-            color: #052855;
-            font-size: 27px;
-            font-weight: 700;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            margin-bottom: 30px;
-        }
-        .card p:nth-child(2){
-            color: #5D6A7A;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-        .card nav ul{
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-        .card ul li{
-            width: 50%;
-            list-style-position: inside;
-            margin: 10px 0;
-            color: #052855;
-            font-family: 'Notosans2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
-        .card a{
-            display: inline-block;
-            margin-top: 25px;
-            color: #0061FF;
-            text-decoration: none;
-            border-bottom: #0061FF 2px solid;
-        }
-        .BGC-3 .wrap:nth-child(even){
-            flex-direction: row-reverse;
-        }
-
-        .BGC-4{
-            height: 750px;
-            background-color: #F7F8F9;
-        }
-        
-
-    </style>
+    <link rel="stylesheet" href="Shop.css">
 </head>
 <body>
     <header>
@@ -363,7 +177,51 @@
         </div>
     </div>
     <div class="BGC-4">
-
+        <h3>更多功能與服務</h3>
+        <div class="wrap">
+            <div class="serve">
+                <div class="item"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/635b5a9107f761002253911b/500x.webp?source_format=png" alt=""></div>
+                <div class="item">
+                    <h4>強大庫存與訂單系統</h4>
+                    <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+                </div>
+            </div>
+            <div class="serve">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item">
+                    <h4>即時化商店業績分析</h4>
+                    <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+                </div>
+            </div>
+            <div class="serve">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item">
+                    <h4>多國語系、幣值切換</h4>
+                    <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
+                </div>
+            </div>
+            <div class="serve">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item">
+                    <h4>專業顧問線上支援</h4>
+                    <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
+                </div>
+            </div>
+            <div class="serve">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item">
+                    <h4>廣告行銷加值服務</h4>
+                    <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
+                </div>
+            </div>
+            <div class="serve">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item">
+                    <h4>品牌專屬成長社群</h4>
+                    <p>致力為品牌店家打造能深度交流且互助的生態體系，是拓展人脈、商機的絕佳場域。</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
