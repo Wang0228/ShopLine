@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>切/SHOPLINE 全球智慧開店平台｜完整開店功能讓你的生意不斷成長</title>
     <link rel="stylesheet" href="Shop.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -345,5 +346,26 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            var scrollHeight = pageYOffset;
+            var header = document.querySelector('header');
+            var HD=document.querySelector('.HD');
+            var login=document.querySelector('.login');
+            if(scrollHeight>170){
+                header.style.height ='80px';
+                header.style.backgroundColor='white';
+                HD.style.paddingTop='15px';
+                login.style.display='none';
+            }
+            else{
+                header.style.height='120px';
+                header.style.backgroundColor="#EBF1F8";
+                HD.style.paddingTop = '17px';
+                login.style.paddingTop='24px';
+                login.style.display='block';
+            }
+        })
+    </script>
 </body>
 </html>
