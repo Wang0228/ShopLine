@@ -130,11 +130,32 @@ p+button {
     left: -5%;
     margin-bottom: 5px;
 }
-
-#pic1 {
+.door{
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    overflow: hidden;
+    width: 440px;
     height: 500px;
 }
-
+#pic1 {
+    height: 500px;
+    animation: move 10s infinite;
+}
+@keyframes move{
+    10%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-33%);
+    }
+    66%{
+        transform: translateX(-67%);
+    }
+    99%{
+        transform: translateX(-0%);
+    }
+}
 .blank {
     height: 80px;
     background-image: linear-gradient(to bottom, #F5F8FB, #ECF2F9);
