@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>切/SHOPLINE 全球智慧開店平台｜完整開店功能讓你的生意不斷成長</title>
     <link rel="stylesheet" href="Shop.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
 <body>
     <header>
         <div class="login">
+            <a href="">Shopline 切版練習</a>
             <a href="#">登入</a>
             <a href="#">台灣</a>
         </div>
@@ -350,17 +351,19 @@
         window.addEventListener('scroll',function(){
             var scrollHeight = pageYOffset;
             var header = document.querySelector('header');
-            var HD=document.querySelector('.HD');
+            var HD=document.querySelector('.HD');//getElementById("HD")
             var login=document.querySelector('.login');
             if(scrollHeight>170){
                 header.style.height ='80px';
                 header.style.backgroundColor='white';
+                header.style.transition='1.2s';
                 HD.style.paddingTop='15px';
                 login.style.display='none';
             }
             else{
                 header.style.height='120px';
                 header.style.backgroundColor="#EBF1F8";
+                header.style.transition='0.5s';
                 HD.style.paddingTop = '17px';
                 login.style.paddingTop='24px';
                 login.style.display='block';

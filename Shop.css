@@ -44,11 +44,13 @@ header {
 .HD li {
     list-style: none;
     display: inline-block;
+
 }
 
 .HD a {
     color: #2d3b52;
     text-decoration: none;
+    padding-bottom: 25px;
 }
 
 .HD li+li {
@@ -140,7 +142,7 @@ p+button {
 }
 #pic1 {
     height: 500px;
-    animation: move 10s infinite;
+    animation: move 5s infinite;
 }
 @keyframes move{
     10%{
